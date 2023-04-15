@@ -55,133 +55,14 @@
                         <p class="text-3xl tracking-tight text-gray-900">${{$habitation->price}} за ночь</p>
 
                         <!-- Reviews -->
-                        <div class="mt-6">
-                            <h3 class="sr-only">Reviews</h3>
-                            <div class="flex items-center">
-                                <div class="flex items-center">
-                                    <!--
-                                      Heroicon name: mini/star
-
-                                      Active: "text-gray-900", Default: "text-gray-200"
-                                    -->
-                                    <svg class="text-gray-900 h-5 w-5 flex-shrink-0"
-                                         xmlns="http://www.w3.org/2000/svg"
-                                         viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                        <path fill-rule="evenodd"
-                                              d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
-                                              clip-rule="evenodd"/>
-                                    </svg>
-
-                                    <!-- Heroicon name: mini/star -->
-                                    <svg class="text-gray-900 h-5 w-5 flex-shrink-0"
-                                         xmlns="http://www.w3.org/2000/svg"
-                                         viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                        <path fill-rule="evenodd"
-                                              d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
-                                              clip-rule="evenodd"/>
-                                    </svg>
-
-                                    <!-- Heroicon name: mini/star -->
-                                    <svg class="text-gray-900 h-5 w-5 flex-shrink-0"
-                                         xmlns="http://www.w3.org/2000/svg"
-                                         viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                        <path fill-rule="evenodd"
-                                              d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
-                                              clip-rule="evenodd"/>
-                                    </svg>
-
-                                    <!-- Heroicon name: mini/star -->
-                                    <svg class="text-gray-900 h-5 w-5 flex-shrink-0"
-                                         xmlns="http://www.w3.org/2000/svg"
-                                         viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                        <path fill-rule="evenodd"
-                                              d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
-                                              clip-rule="evenodd"/>
-                                    </svg>
-
-                                    <!-- Heroicon name: mini/star -->
-                                    <svg class="text-gray-200 h-5 w-5 flex-shrink-0"
-                                         xmlns="http://www.w3.org/2000/svg"
-                                         viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                        <path fill-rule="evenodd"
-                                              d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
-                                              clip-rule="evenodd"/>
-                                    </svg>
-                                </div>
-                                <p class="sr-only">4 out of 5 stars</p>
-                                <a href="#" data-modal-target="reviews" data-modal-toggle="reviews"
-                                   class="ml-3 text-sm font-medium text-indigo-600 hover:text-indigo-500">36
-                                    отзывов
-                                </a>
-
-
-                                <div id="reviews" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                                    <div class="relative w-full max-w-2xl max-h-full">
-                                        <!-- Modal content -->
-                                        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                                            <!-- Modal header -->
-                                            <div class="flex items-start justify-between p-5 border-b rounded-t dark:border-gray-600">
-                                                <h3 class="text-xl font-semibold text-gray-900 lg:text-2xl dark:text-white">
-                                                    Отзывы
-                                                </h3>
-                                                <button onclick="toggle()"
-                                                        type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white">
-                                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                                                </button>
-                                            </div>
-                                            <!-- Modal body -->
-                                            <div class="p-6 space-y-6">
-                                                <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                                                    With less than a month to go before the European Union enacts new consumer privacy laws for its citizens, companies around the world are updating their terms of service agreements to comply.
-                                                </p>
-                                                <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                                                    The European Union’s General Data Protection Regulation (G.D.P.R.) goes into effect on May 25 and is meant to ensure a common set of data rights in the European Union. It requires organizations to notify users as soon as possible of high-risk data breaches that could personally affect them.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <script>
-
-
-                                    const $targetEl = document.getElementById('reviews');
-
-                                    const options = {
-                                        placement: 'bottom-right',
-                                        backdrop: 'dynamic',
-                                        backdropClasses: 'bg-gray-900 bg-opacity-50 dark:bg-opacity-80 fixed inset-0 z-40',
-                                        closable: true,
-                                        onHide: () => {
-                                            console.log('modal is hidden');
-                                        },
-                                        onShow: () => {
-                                            console.log('modal is shown');
-                                        },
-                                        onToggle: () => {
-                                            console.log('modal has been toggled');
-                                        }
-                                    };
-                                    const modal = new Modal($targetEl, options);
-                                    function toggle(){
-                                        modal.toggle()
-                                    }
-
-                                </script>
-
-
-                            </div>
-                        </div>
+                        <x-modal-review :habitation="$habitation"></x-modal-review>
 
 
                         <form action="{{route('booking.store')}}" method="post">
                             @csrf
                             <!-- Calendar -->
                             <div class="mt-10">
-                                <div
-                                        class="p-4 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
-
-
+                                <div class="p-4 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
                                     <div class="mb-4">
 
                                         <div date-rangepicker="" id="dateRangePickerId" class="flex items-center">
@@ -291,40 +172,6 @@
                                 <input hidden name="habitation" value="{{$habitation->id}}">
                             </div>
                         </form>
-
-
-                        @if(session()->get('ok'))
-
-                            <div id="toast-success"
-                                 class="flex items-center p-4 mt-4 w-full max-w-xs text-gray-500 bg-white rounded-lg shadow dark:text-gray-400 dark:bg-gray-800"
-                                 role="alert">
-                                <div
-                                        class="inline-flex flex-shrink-0 justify-center items-center w-8 h-8 text-green-500 bg-green-100 rounded-lg dark:bg-green-800 dark:text-green-200">
-                                    <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
-                                         xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                              d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                              clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span class="sr-only">Check icon</span>
-                                </div>
-                                <div class="ml-3 text-sm font-normal">Бронь прошла успешно ждите подтверждения хозяина
-                                </div>
-                                <button type="button"
-                                        class="ml-auto -mx-1.5 -my-1.5 bg-white text-gray-400 hover:text-gray-900 rounded-lg focus:ring-2 focus:ring-gray-300 p-1.5 hover:bg-gray-100 inline-flex h-8 w-8 dark:text-gray-500 dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700"
-                                        data-dismiss-target="#toast-success" aria-label="Close">
-                                    <span class="sr-only">Close</span>
-                                    <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
-                                         xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                                              clip-rule="evenodd"></path>
-                                    </svg>
-                                </button>
-                            </div>
-                        @endif
-
-
                     </div>
 
 
@@ -426,6 +273,99 @@
             </div>
         </div>
     </div>
+
+
+    @if(session()->get('ok'))
+        <div id="toast-top"
+             class="bg-white inset-x-0	z-10 dark:bg-gray-800 dark:divide-gray-700 dark:text-gray-400 divide-gray-200 fixed flex items-center max-w-xs mx-auto p-4 rounded-lg shadow text-gray-500 top-5 w-full"
+             role="alert">
+            <div class="inline-flex items-center justify-center flex-shrink-0 w-8 h-8 text-green-500 bg-green-100 rounded-lg dark:bg-green-800 dark:text-green-200">
+                <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                          clip-rule="evenodd"></path>
+                </svg>
+                <span class="sr-only">Check icon</span>
+            </div>
+            <div class="ml-3 text-sm font-normal">Бронь прошла успешно ждите подтверждения хозяина</div>
+            <button type="button"
+                    onclick="$('#toast-top').hide()"
+                    class="ml-auto -mx-1.5 -my-1.5 bg-white text-gray-400 hover:text-gray-900 rounded-lg focus:ring-2 focus:ring-gray-300 p-1.5 hover:bg-gray-100 inline-flex h-8 w-8 dark:text-gray-500 dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700"
+                    data-dismiss-target="#toast-success" aria-label="Close">
+                <span class="sr-only">Close</span>
+                <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                          clip-rule="evenodd"></path>
+                </svg>
+            </button>
+        </div>
+    @endif
+
+
+
+    @if (session('success'))
+        <div id="toast-top"
+             class="bg-white inset-x-0 z-10	 dark:bg-gray-800 dark:divide-gray-700 dark:text-gray-400 divide-gray-200 fixed flex items-center max-w-xs mx-auto p-4 rounded-lg shadow text-gray-500 top-5 w-full"
+             role="alert">
+            <div class="inline-flex items-center justify-center flex-shrink-0 w-8 h-8 text-green-500 bg-green-100 rounded-lg dark:bg-green-800 dark:text-green-200">
+                <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                          clip-rule="evenodd"></path>
+                </svg>
+                <span class="sr-only">Check icon</span>
+            </div>
+            <div class="ml-3 text-sm font-normal">{{session('success')}}</div>
+            <button type="button"
+                    onclick="$('#toast-top').hide()"
+                    class="ml-auto -mx-1.5 -my-1.5 bg-white text-gray-400 hover:text-gray-900 rounded-lg focus:ring-2 focus:ring-gray-300 p-1.5 hover:bg-gray-100 inline-flex h-8 w-8 dark:text-gray-500 dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700"
+                    data-dismiss-target="#toast-success" aria-label="Close">
+                <span class="sr-only">Close</span>
+                <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                          clip-rule="evenodd"></path>
+                </svg>
+            </button>
+        </div>
+    @endif
+
+    @if ($errors->any())
+        @foreach ($errors->all() as $i => $error)
+            <div id="toast-top{{$i}}"
+                 class="bg-white inset-x-0 z-10	 dark:bg-gray-800 dark:divide-gray-700 dark:text-gray-400 divide-gray-200 fixed flex items-center max-w-xs mx-auto p-4 rounded-lg shadow text-gray-500 top-5 w-full"
+                 role="alert">
+                <div class="inline-flex items-center justify-center flex-shrink-0 w-8 h-8 text-red-500 bg-red-100 rounded-lg dark:bg-red-800 dark:text-red-200">
+                    <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                              clip-rule="evenodd"></path>
+                    </svg>
+                    <span class="sr-only">Error icon</span>
+                </div>
+                <div class="ml-3 text-sm font-normal">{{$error}}</div>
+                <button type="button"
+                        onclick="$('#toast-top{{$i}}').hide()"
+                        class="ml-auto -mx-1.5 -my-1.5 bg-white text-gray-400 hover:text-gray-900 rounded-lg focus:ring-2 focus:ring-gray-300 p-1.5 hover:bg-gray-100 inline-flex h-8 w-8 dark:text-gray-500 dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700"
+                        data-dismiss-target="#toast-success" aria-label="Close">
+                    <span class="sr-only">Close</span>
+                    <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                              clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </div>
+        @endforeach
+
+    @endif
 
 
 </x-app-layout>

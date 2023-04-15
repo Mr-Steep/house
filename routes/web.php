@@ -6,6 +6,7 @@ use App\Http\Controllers\HabitationController;
 use App\Http\Controllers\ImageController;
 use App\Http\Controllers\MessagesController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\ReviewController;
 use App\Http\Controllers\SampleController;
 use Illuminate\Support\Facades\Route;
 
@@ -46,6 +47,8 @@ Route::middleware('auth')->group(function () {
     Route::get('profile/{user}', [ProfileController::class, 'show'])->name('profile.show');
 
     Route::resource('messages', MessagesController::class);
+    Route::resource('review', ReviewController::class);
+
 
 
     Route::controller(ImageController::class)->group(function(){

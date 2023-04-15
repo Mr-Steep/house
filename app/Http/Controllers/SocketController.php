@@ -40,7 +40,6 @@ class SocketController extends Controller implements MessageComponentInterface
                     $client->send(json_encode($data));
                 }
             }
-
         }
     }
 

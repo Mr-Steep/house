@@ -48,6 +48,13 @@ class Habitation extends Model
         return $this->hasMany(Booking::class);
     }
 
+
+    public function reviews()
+    {
+        return $this->hasMany(Review::class);
+    }
+
+
     public function type_habitations()
     {
         return $this->hasOne(TypeHabitation::class,'id','id_type_habitation');

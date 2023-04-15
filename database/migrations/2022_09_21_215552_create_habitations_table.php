@@ -32,6 +32,7 @@ return new class extends Migration
             $table->json('ids_photo')->nullable(true);
             $table->integer('finished')->default(1);
             $table->integer('question')->default(1);
+            $table->boolean('moderate')->default(false);
             $table->timestamps();
         });
     }

@@ -121,7 +121,7 @@ class DashboardLayout extends Component
         })->get();
 
 
-        $countBooking = self::getCountNewBooking() + self::getCountSoonBooking() + self::getCountInHouseBooking() + self::getCountDepartureBooking();
+        $countBooking = self::getCountNewBooking();
         $countMessageNew = Chat::where('to_user_id',Auth::user()->id)
             ->where('message_status','Not Send')->get()->count();
         return view('layouts.dashboard', compact('countBooking', 'countMessageNew'));

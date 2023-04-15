@@ -38,7 +38,7 @@ class ReviewController extends Controller
     public function store(Request $request)
     {
         $validate = [
-            'comment'=>'required|min:50',
+            'comment'=>'required|min:20',
             'habitation_id'=>'required|numeric',
             ];
 

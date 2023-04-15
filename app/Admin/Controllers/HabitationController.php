@@ -48,7 +48,7 @@ class HabitationController extends AdminController
         $grid->column('Photos', __('Photos'))->display(function (){
             $images = $this->images()->get()->pluck('path');
             return json_decode($images, true);
-        })->image('https://yvvdev.site/', 100, 100);
+        })->image( env('APP_URL'), 100, 100);
 
 
 
